@@ -35,7 +35,9 @@ export default () => {
       <div className={styles.auth}>
         {user ? (
           <Link href='/account'>
-            <a>{user.email}</a>
+            <a>
+              <img src='/pngegg.png' alt={user.email} />
+            </a>
           </Link>
         ) : (
           <Link href='/login'>
